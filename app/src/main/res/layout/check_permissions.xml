@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/PCDText"
+        android:layout_width="307dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/tinos"
+        android:lineSpacingExtra="2sp"
+        android:text="Descripción de permisos a usar //TODO. El latín es la lengua de la que deriva, etimológicamente hablando, el término permiso que ahora nos ocupa. En concreto, emana de la palabra “permissum”"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/PCButton_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/PCButton_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:text="Permisos de escitura"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toTopOf="@+id/PCButton_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <Button
+        android:id="@+id/PCButton_2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="117dp"
+        android:text="Enable Bluetooth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:layout_width="197dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PCButton_2">
+        <com.blazepod.blazepod.ui.fonts.LatoRegularTextView
+            android:id="@+id/tv_location_access_btn"
+            style="@style/AccessButtonsTextStyle"/>
+
+        <ImageView
+            android:id="@+id/v_sign_bluetooth"
+            android:layout_width="35dp"
+            android:layout_height="29dp"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="20.0dip"
+            android:adjustViewBounds="false"
+            android:background="@drawable/icn_v_access"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/PCTitulo"
+        android:layout_width="305dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/tinos"
+        android:text="Bluetooth Permisos"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/bootstrap_gray_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/PCDText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Bluetooth Permisos" />
+
+
+</android.support.constraint.ConstraintLayout>
